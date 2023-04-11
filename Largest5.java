@@ -1,0 +1,37 @@
+class Largest5 
+{
+	public static void main(String[] args) 
+	{
+		for (int i=1;i<=1000 ;i++ )
+		{
+			int temp=i;
+			int largest=0;
+			int rev=0;
+			while (temp!=0)
+			{
+				int digit=temp%10;
+				rev=rev*10+digit;
+				temp=temp/10;
+
+			}
+			if (rev==i)
+			{
+			
+			while (rev!=0)
+			{
+				int digit1=rev%10;
+				if (digit1>largest)
+				{
+					largest=digit1;
+				
+				}
+				rev=rev/10;
+			}
+			System.out.println(i+"="+largest);
+		
+	
+		}
+	}
+	}
+}
+

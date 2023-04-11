@@ -1,0 +1,29 @@
+class Palindrome1
+{
+
+	public static void main(String[] args) 
+	{
+		int m=1;
+		int n=15;
+		int count=0;
+		for (int i=m;i<=40 ;i++ )
+		{
+			int temp=i;
+			int rev=0;
+			while (temp!=0)
+			{
+				int digit=temp%10;
+				rev=rev*10+digit;
+				temp=temp/10;
+			}
+			if (rev==i)
+			{
+				count++;
+				if (count<=15)
+				{
+					System.out.println(i);
+				}
+			}
+		}
+	}
+}

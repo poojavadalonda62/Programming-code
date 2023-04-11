@@ -1,0 +1,50 @@
+class ArmStrong4 
+{
+	public static void main(String[] args) 
+	{ 
+		int sum1=0;
+		for (int i=1;i<=1000 ;i++ )
+		{
+			int temp1=i;
+			int temp2=i;
+			int count=0;
+			while (temp1!=0)
+			{
+				int digit=temp1%10;
+				count++;
+				temp1=temp1/10;
+			}
+			int sum=0;
+			while (temp2!=0)
+			{
+				int digit=temp2%10;
+				int prod=1;
+				for (int j=1;j<=count ;j++ )
+				{
+					prod=prod*digit;
+				}
+				sum=sum+prod;
+				temp2=temp2/10;
+			}
+				if (sum==i)
+				{
+					sum1=sum1+i;
+				}
+			}
+			
+		   System.out.println("sum of armstrong num is:"+sum1);
+		   int smallest1=9;
+		   int temp3=sum1;
+		   while (temp3!=0)
+		   {
+			   int digit=temp3%10;
+			   if (digit<smallest1)
+			   {
+				   smallest1=digit;
+			   }
+			   temp3=temp3/10;
+		   }
+			   System.out.println("smallest digit is:"+smallest1);
+	}
+}
+

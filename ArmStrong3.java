@@ -1,0 +1,66 @@
+class ArmStrong3 
+{
+	public static void main(String[] args) 
+	{
+	 for (int i=1;i<=1000 ;i++ )
+	 {
+		 int temp1=i;
+		 int temp2=i;
+		 int count=0;
+		 while (temp1!=0)
+		 {
+			 int digit=temp1%10;
+			 count++;
+			temp1=temp1/10;
+		 }
+			 int sum=0;
+			 while (temp2!=0)
+			 {
+				 int digit1=temp2%10;
+				 int prod=1;
+				 for (int j=1;j<=count ;j++ )
+				 {
+					 prod=prod*digit1;
+				 }
+				 sum=sum+prod;
+				 temp2=temp2/10;
+			 }
+			 if (sum==i)
+			 {
+				 count++;
+				 if (count==12)
+				 {
+					 System.out.println(i);
+					 int largest1=0;
+					 int largest2=0;
+					 int temp3=i;
+					 while (temp3!=0)
+					 {
+						 int digit=temp3%10;
+						 if (digit>largest1)
+						 {
+							 largest2=largest1;
+							 largest1=digit;
+						 }
+							 else if(digit>largest2&&digit!=largest1)
+							 {
+								 largest2=digit;
+							 }
+							 temp3=temp3/10;
+						 }
+						System.out.println("largest 1 digit is:"+largest1);
+						System.out.println("largest 2 digit is:"+largest2);
+						int prod=1;
+						for (int k=largest2;k>=1 ;k++ )
+						{
+							prod=prod*k;
+						}
+						System.out.println("factorial of 2nd largest digit :"+prod);
+
+						 
+					 }
+				 }
+			 }
+		 }
+}
+	

@@ -1,0 +1,18 @@
+ import java.util.Scanner
+ class Ias 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter age");
+		int age=sc.nextInt();
+		if (age>=21&&age<=32)
+		{
+			System.out.println("they are eligible");
+		}
+		else
+		{
+			System.out.println("they are not eligible");
+		}
+	}
+}

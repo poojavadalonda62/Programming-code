@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class  Digit2
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(SYstem.in);
+		System.out.println("enter m value");
+		int m=sc.nextInt();
+		System.out.println("enter n value");
+		int n=sc.nextInt();
+		for (int i=n;i>=m;i-- )
+		{
+			int temp=i;
+			int count=0;
+			while (temp!=0)
+			{
+			int digit=temp%10;
+			if (digit%3==0)
+			{
+				count++;
+			}
+			temp=temp/10;
+		}
+	}
+}
+       System.out.println("count is:"+count);
+}
+}
+

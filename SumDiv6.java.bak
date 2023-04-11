@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class SumDiv6 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter m value");
+		int m=sc.nextInt();
+		System.out.println("enter n value");
+		int n=sc.nextInt();
+		int sum=0;
+		for (int i=m;i<=n ; i++)
+		{
+			if (i%6==0)
+			{
+				sum=sum+i;
+				System.out.println(i);21-02-2023
+			}
+		}
+		System.out.println("summation num div by 6 :"+sum);
+	}
+}

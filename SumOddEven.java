@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class SumOddEven
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner (System.in);
+		System.out.println("enter first num");
+		int m=sc.nextInt();
+		System.out.println("enter last num");
+		int n=sc.nextInt();
+		int sum=0;
+		for (int i=m;i<=n ;i++ )
+		{
+			if (i%2!=0)
+			{
+				sum=sum+i;
+			}
+		}
+				System.out.println("Summation odd num from m to n is:"+sum);
+		}
+	}

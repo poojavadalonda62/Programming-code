@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Largest
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter first num");
+		int a=sc.nextInt();
+		System.out.println("enter second num");
+		int b=sc.nextInt();
+		System.out.println("enter third num");
+		int c=sc.nextInt();
+		System.out.println("enter fourth num");
+		int d=sc.nextInt();
+		System.out.println("enter fifth num");
+		int e=sc.nextInt();
+		if (a>b&&a>c&&a>d&&a>e)
+		{
+			System.out.println("a is largest");
+		}
+		else if (b>c&&b>d&&b>e)
+		{
+			System.out.println("b is largset");
+		}
+		else if (c>d&&c>e)
+		{
+			System.out.println("c is largset");
+		}
+		else if (d>e)
+		{
+			System.out.println("d is largest");
+		}
+		else 
+		{
+			System.out.println("e is largest");
+		}
+	}
+
+}
